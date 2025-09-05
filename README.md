@@ -74,7 +74,36 @@ git branch nombre-rama
 ---
 
 ---
+## Stash (guardar cambios temporales)
+```bash
+# Guarda los cambios sin hacer commit
+git stash              
+# Muestra los stash guardados
+git stash list         
+# Recupera el último stash y lo borra de la lista
+git stash pop  
+ # Recupera un stash sin borrarlo
+git stash apply       
+# Borra el último stash
+git stash drop         
+```
 
+---
+## Limpienza y utlidades
+```bash
+# Eliminar archivos sin seguimiento
+git clean -fd 
+# Ver quién editó cada línea de un archivo
+git blame archivo.txt 
+# Ranking de commits por autor
+git shortlog -sn              
+
+
+```
+
+
+
+---
 ## Buenas prácticas  
 
 ✅ Hacer **commits pequeños y descriptivos**.  
