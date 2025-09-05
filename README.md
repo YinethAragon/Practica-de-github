@@ -15,6 +15,12 @@ git config --global user.email "tuemail@example.com"
 
 # Verificar configuración
 git config --list
+
+#cambiar editor por defecto (Ej:visual studio code)
+git config --global core.editor "code --wait"
+
+#abrir configuracion por defecto en el editor por defecto 
+code ~/.gitconfig
 ```
 
 ---
@@ -49,24 +55,23 @@ git push origin main
 # Descargar los últimos cambios de GitHub
 git pull origin main
 ```
+---
 
 ---
 
-## Ramas (Branches)  
+## 🔹 Ramas (Branches)  
 
 ```bash
-# Crear una nueva rama
-git branch nombre-rama
-
-# Cambiar a una rama existente
-git checkout nombre-rama
-
-# Crear y cambiar a la vez
-git checkout -b nombre-rama
-
 # Combinar cambios de una rama a otra (ej. main)
 git merge nombre-rama
+# Cambiar a una rama existente
+git checkout nombre-rama
+# Crear y cambiar a la vez
+git checkout -b nombre-rama
+# Crear una nueva rama
+git branch nombre-rama
 ```
+---
 
 ---
 
